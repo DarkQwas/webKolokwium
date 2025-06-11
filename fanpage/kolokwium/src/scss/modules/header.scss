@@ -1,0 +1,99 @@
+@use "variables" as *;
+
+body {
+    margin: 0;
+}
+body > header {
+    width: 100%;
+    margin: 0;
+    @media (min-width: $desktopBreakpoint) {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .header-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .header-logo {
+        width: 35%;
+        border-radius: 50%;
+        margin-left: 33%;
+        margin-top: -25%;
+        display: flex;
+        @media (min-width: $desktopBreakpoint) {
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+    h6 {
+        text-align: center;
+        margin-top: -5%;
+        font-weight: 100;
+        color: $buttonColor;
+    }
+    .buttons {
+        display: flex;
+        align-items: center;
+        height: 3vh;
+        margin-left: 1%;
+        justify-content: space-evenly;
+        margin: 1px;
+        text-align: center;
+        border-radius: 1px;
+        .button-1 {
+            background-color: $secondatyTextColor;
+            img {
+                height: 3vh;
+            }
+        .button-2 {
+            background-color: $secondatyTextColor;
+            img {
+                height: 3vh;
+            }
+
+        }
+        .button-3 {
+            img {
+                height: 3vh;
+            }
+        }
+        }
+    }
+    hr {
+        margin-top: 15px;
+        margin-left: 6px;
+        margin-right: 6px;
+        color: $buttonColor;
+    }
+    .bottom-header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       text-decoration: none;
+       margin-bottom: 10px;
+       .links a{
+        gap: 15px;
+        color: $primaryTextColor;
+        text-decoration: none;
+        margin-left: 5px;
+        &:hover {
+            color: $secondatyTextColor;
+        }
+       }
+       .more {
+        background: $buttonColor;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-right: 7px;
+       }
+        }
+    
+}
